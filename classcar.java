@@ -1,10 +1,12 @@
+import java.io. *;
 class Car {
     int num;
     String name;
 }
 
 public class classcar {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws IOException
+    { 
         Car car1;
         car1 = new Car();
         
