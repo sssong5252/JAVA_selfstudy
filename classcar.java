@@ -37,7 +37,7 @@ public class classcar {
 
         System.out.println("생성된 차량의 이름 목록:");
         for (Car car : carList) {
-            System.out.println(car.name);
+            System.out.println(car.name); //ArrayList에 car.name을 넣고 이를 출력한다
         }
 
         while (true) {
