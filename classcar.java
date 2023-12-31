@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.ArrayList;
+
 class Car {
     int num;
     String name;
@@ -14,30 +16,29 @@ class Car {
 }
 
 public class classcar {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
 
         BufferedReader br =
                 new BufferedReader(new InputStreamReader(System.in));
 
-        Car car1;
-        car1 = new Car();
+        ArrayList<Car> carList = new ArrayList<>();
 
-        Car car2;
-        car2 = new Car();
-
-
+        Car car1 = new Car();
         car1.num = 1023;
         car1.name = "sonata";
         car1.gas = 20.3;
-        car1.show();
+        carList.add(car1);
 
+        Car car2 = new Car();
         car2.num = 3029;
         car2.name = "Benz";
         car2.gas = 30.9;
-        car2.show();
+        carList.add(car2);
 
-        System.out.println(car1.name);
+        System.out.println("생성된 차량의 이름 목록:");
+        for (Car car : carList) {
+            System.out.println(car.name);
+        }
 
         while (true) {
             System.out.println("차량 이름을 입력하세요 (0을 입력하면 종료): ");
@@ -57,7 +58,12 @@ public class classcar {
             String gasStr = br.readLine();
             newCar.gas = Double.parseDouble(gasStr);
 
-            newCar.show();
+            carList.add(newCar);
+
+            System.out.println("생성된 차량의 이름 목록:");
+            for (Car car : carList) {
+                System.out.println(car.name);
+            }
         }
     }
 }
