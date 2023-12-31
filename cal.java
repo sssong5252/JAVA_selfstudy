@@ -1,5 +1,5 @@
 // import java.util.Scanner;
-import java.lang.Math;
+import java.lang.Math; 
 import java.io.*;
 public class cal {
     public static void main(String[] args) throws IOException {
@@ -8,7 +8,7 @@ public class cal {
             System.out.print("insert the operator: ");
             String operator = input.readLine();
            
-            if (operator.equals("x")) 
+            if (operator.equals("x"))
             {
                 System.out.println("프로그램을 종료합니다.");
                 break;
@@ -93,7 +93,7 @@ public class cal {
 
     // }
 
-    public static double add(double a, double b) {
+    public static double add(double a, double b) { //거듭제곱 때문에 더블로 변경
         return a + b;
     }
 
