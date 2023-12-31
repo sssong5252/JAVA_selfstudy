@@ -6,7 +6,7 @@ class Car {
     String name;
     double gas;
     void show() {
-        System.out.println("차량의 번호는 " + this.num);
+        System.out.println("차량의 번호는 " + this.num); //this.은 본인을 뜻한다
         System.out.println("남은 연료의 양은 " + this.gas);
     }
     void info() {
