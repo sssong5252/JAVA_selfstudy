@@ -21,7 +21,7 @@ public class classcar {
         BufferedReader br =
                 new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<Car> carList = new ArrayList<>();
+        ArrayList<Car> carList = new ArrayList<>(); //타입 생략 가능. ArrayList 생성
 
         Car car1 = new Car();
         car1.num = 1023;
