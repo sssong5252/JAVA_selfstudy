@@ -11,7 +11,7 @@ class Car {
     }
     void info() {
         System.out.println("정보를 표시합니다.");
-        this.show();
+        this.show(); //위에서 생성한 show를 실행한다. 그럼 당연히 코드에서는 위 기능을 담은 info를 써야겠지??
     }
 }
 
