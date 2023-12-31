@@ -18,7 +18,7 @@ class Car {
 public class classcar {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br =
+        BufferedReader br = //굳이 br로 쓰지 않아도 됨
                 new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<Car> carList = new ArrayList<>(); //타입 생략 가능. ArrayList 생성
