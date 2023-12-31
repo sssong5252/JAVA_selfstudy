@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
+import java.util.ArrayList; //가변적 배열
 
 class Car {
     int num;
