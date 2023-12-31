@@ -1,4 +1,5 @@
 // import java.util.Scanner;
+import java.lang.Math;
 import java.io.*;
 public class cal {
     public static void main(String[] args) throws IOException {
@@ -15,16 +16,16 @@ public class cal {
 
             System.out.print("insert 1st num: ");
             String a = input.readLine();
-            int num1 = Integer.parseInt(a);
+            double num1 = Double.parseDouble(a);
             System.out.print("insert 2nd num: ");
             String b = input.readLine();
-            int num2 = Integer.parseInt(b);
+            double num2 = Double.parseDouble(b);
 
-            int plus = add(num1, num2);
-            int differ = subtract(num1, num2);
-            int mul = multiply(num1, num2);
-            int div = divide(num1, num2);
-
+            double plus = add(num1, num2);
+            double differ = subtract(num1, num2);
+            double mul = multiply(num1, num2);
+            double div = divide(num1, num2);
+            double mul2 = mulmul(num1, num2);
             
             if (operator.equals("+")) 
             {
@@ -47,6 +48,12 @@ public class cal {
             else if (operator.equals("/"))
             {
                 System.out.println("result: " + div);
+                System.out.println("--------------------------------------");
+            }
+
+            else if (operator.equals("**"))
+            {
+                System.out.println("result: " + mul2);
                 System.out.println("--------------------------------------");
             }
         }
@@ -86,19 +93,24 @@ public class cal {
 
     // }
 
-    public static int add(int a, int b) {
+    public static double add(double a, double b) {
         return a + b;
     }
 
-    public static int subtract(int a, int b) {
+    public static double subtract(double a, double b) {
         return a - b;
     }
 
-    public static int multiply(int a, int b) {
+    public static double multiply(double a, double b) {
         return a * b;
     }
 
-    public static int divide(int a, int b) {
+    public static double divide(double a, double b) {
         return a / b;
+    }
+
+    public static double mulmul(double a, double b)
+    {
+        return Math.pow(a, b);
     }
 }
