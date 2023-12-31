@@ -9,6 +9,7 @@ class Car {
     }
     void info() {
         System.out.println("정보를 표시합니다.");
+        show();
     }
 }
 
