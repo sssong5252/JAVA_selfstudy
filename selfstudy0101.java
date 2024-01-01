@@ -13,6 +13,11 @@ public class selfstudy0101 {
 
         double[] double_list = new double[num];
 
+        for(int i = 0; i < num; i++)
+        {
+            String str2 = br.readLine();
+            double input_value = Double.parseDouble(str2);
+        }
         
     }
 }
