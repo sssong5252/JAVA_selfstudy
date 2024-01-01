@@ -17,6 +17,6 @@ public class arraytest2 {
             double C = Double.parseDouble(str2);
             B[i] = C;
         }
-        System.out.println(Arrays.toString(B));
+        System.out.println(Arrays.toString(B)); //배열을 문자열로 취급해서 흔히 아는 형태로 출력하기
     }
 }
