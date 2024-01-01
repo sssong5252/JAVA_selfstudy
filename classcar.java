@@ -40,7 +40,7 @@ public class classcar {
             System.out.println(car.name); //ArrayList에 car.name을 넣고 이를 출력한다
         }
 
-        while (true) {
+        while (true){ 
             System.out.println("차량 이름을 입력하세요 (0을 입력하면 종료): ");
             String carName = br.readLine();
             if (carName.equals("0")) {
@@ -61,6 +61,8 @@ public class classcar {
             carList.add(newCar);
 
             System.out.println("생성된 차량의 이름 목록:");
+
+            
             for (Car car : carList) {
                 System.out.println(car.name); //위와 동일
             }
