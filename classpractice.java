@@ -36,6 +36,7 @@ public class classpractice {
             newPerson.age = inputAge;
 
             nameList.add(newPerson);
+            nameList.add(0, "우현");
 
             for (Info person : nameList) {
                 System.out.println(person.name);
