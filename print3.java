@@ -6,11 +6,14 @@ public class print3 {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
-        for (int i = 1; i <= num; i++) {
+        int i = 1;
+        while (i <= num) {
             if (i % 3 == 0) {
+                i++;
                 continue;
             }
             System.out.println(i);
+            i++;
         }
     }
 }
