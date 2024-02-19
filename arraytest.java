@@ -40,7 +40,7 @@ public class arraytest {
 
             array_new[i] = num3;
         }
-        for
+        for  
 
         System.out.println(str[0] + str[1]);
     }
