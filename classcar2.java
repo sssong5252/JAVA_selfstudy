@@ -20,7 +20,7 @@ class SportsCar extends Car {
     }
 }
 
-public class InheritanceExample {
+public class classcar2 {
     public static void main(String[] args) throws IOException {
         ArrayList<Car> carList = new ArrayList<>();
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
