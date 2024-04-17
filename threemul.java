@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class threemul {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("정수를 입력하세요: ");
-        int input = scanner.nextInt();
+        int input = sc.nextInt();
 
         int number = 1;
         
