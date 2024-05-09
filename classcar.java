@@ -21,22 +21,22 @@ public class classcar {
         BufferedReader br = //굳이 br로 쓰지 않아도 됨
                 new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<Car> carList = new ArrayList<>(); //타입 생략 가능. ArrayList 생성
+        ArrayList<pack> carList = new ArrayList<>(); //타입 생략 가능. ArrayList 생성
 
-        Car car1 = new Car();
+        pack car1 = new pack();
         car1.num = 1023;
         car1.name = "sonata";
         car1.gas = 20.3;
         carList.add(car1);
 
-        Car car2 = new Car();
+        pack car2 = new pack();
         car2.num = 3029;
         car2.name = "Benz";
         car2.gas = 30.9;
         carList.add(car2);
 
         System.out.println("생성된 차량의 이름 목록:");
-        for (Car car : carList) {
+        for (pack car : carList) {
             System.out.println(car.name); //ArrayList에 car.name을 넣고 이를 출력한다
         }
 
@@ -47,7 +47,7 @@ public class classcar {
                 break;
             }
 
-            Car newCar = new Car();
+            pack newCar = new pack();
             newCar.name = carName;
 
             System.out.print("차량 번호를 입력하세요: ");
@@ -63,7 +63,7 @@ public class classcar {
             System.out.println("생성된 차량의 이름 목록:");
 
             
-            for (Car car : carList) {
+            for (pack car : carList) {
                 System.out.println(car.name); //위와 동일
             }
         }
